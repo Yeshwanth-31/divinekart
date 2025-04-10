@@ -64,3 +64,46 @@
   cursor: pointer;
   font-weight: bold;
 }
+/* Tabs for User/Admin */
+.login-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.login-tabs button {
+  padding: 8px 20px;
+  margin: 0 5px;
+  background-color: #f7efe1;
+  border: 1px solid #b4884d;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #b4884d;
+  transition: all 0.2s ease;
+}
+
+.login-tabs button:hover {
+  background-color: #e6d4b6;
+}
+
+.login-tabs button.active {
+  background-color: #b4884d;
+  color: white;
+  box-shadow: 0 2px 6px rgba(180, 136, 77, 0.3);
+}
+
+/* Toggle between Login <-> Signup */
+.toggle-auth {
+  margin-top: 12px;
+  color: #b4884d;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.toggle-auth:hover {
+  color: #8c6935;
+}
+

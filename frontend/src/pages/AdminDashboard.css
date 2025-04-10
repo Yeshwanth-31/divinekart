@@ -1,0 +1,57 @@
+.admin-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf2;
+  }
+  
+  .admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+  
+  .admin-form input {
+    padding: 10px;
+    border: 1px solid #b4884d;
+    border-radius: 6px;
+  }
+  
+  .admin-form button {
+    background-color: #b4884d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .admin-products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .admin-card {
+    border: 1px solid #e4c28b;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(180, 136, 77, 0.2);
+    max-width: 400px;
+  }
+  
+  .admin-card img.admin-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-card h3 {
+    margin: 0;
+    color: #b4884d;
+  }
+  
