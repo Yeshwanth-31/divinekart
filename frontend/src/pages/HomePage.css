@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf0;
+  }
+  
+  /* Dark Theme */
+  body.dark,
+  .homepage-container.dark {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+  }
+  
+  .dark .navbar {
+    background-color: #2c2c2c;
+  }
+  
+  .dark .nav-links a,
+  .dark .profile-icon,
+  .dark .profile-dropdown a,
+  .dark .profile-option {
+    color: #f5f5f5;
+  }
+  
+  .dark .profile-dropdown {
+    background-color: #2c2c2c;
+    border-color: #444;
+  }
+  
+  .dark .filters {
+    background-color: #333;
+  }
+  
+  .dark .filters button {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .dark .product-card {
+    background-color: #2c2c2c;
+    border-color: #444;
+    color: #f5f5f5;
+  }
+  
+  /* Container */
+  .homepage-container {
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4e9d8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    color: #b4884d;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* Profile Dropdown */
+  .profile-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile-icon {
+    font-size: 28px;
+    color: #222;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 36px;
+    right: -10px; /* shifted to right */
+    background-color: #fffaf0;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 150px;
+    z-index: 1000;
+  }
+  
+  .profile-container:hover .profile-dropdown {
+    display: flex;
+  }
+  
+  .profile-option {
+    font-size: 14px;
+    color: #333;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+  
+  .profile-option:hover {
+    background-color: #f7e9d6;
+    border-radius: 4px;
+  }
+  
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Toggle Switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #b4884d;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(16px);
+  }
+  
+  /* Filters */
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #fff3e0;
+  }
+  
+  .filters button {
+    padding: 8px 16px;
+    border: 1px solid #b4884d;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  /* Catalogue Section */
+  .catalogue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .product-card h3 {
+    color: #b4884d;
+  }
+  
+  .product-card button {
+    margin-top: 10px;
+    background-color: #b4884d;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background-color: #9a7038;
+  }
+  

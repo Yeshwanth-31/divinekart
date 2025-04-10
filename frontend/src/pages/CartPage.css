@@ -1,0 +1,41 @@
+.cart-container {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fffbea;
+    border-radius: 8px;
+  }
+  
+  .qty-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .qty-controls input {
+    width: 60px;
+    padding: 5px;
+  }
+  
+  .total {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    color: #b4884d;
+  }
+  
